@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <img onclick="addPlanetsBack()" class="starSky" src="https://i.pinimg.com/originals/fd/b2/1c/fdb21c0e4f3dbb6ccd9a63c68fce8645.gif">
+        </img>
+
+        
+        <div class="grid">
+            <h1 id="header" class="header">The Planetarium</h1>
+
+            <div onclick="focusPlanet(this)" id="mars" class="planetContainer planetHoverEffect">
+                <img class="planet" src="/planetPictures/mars.png">
+            </div>
+    
+            <div onclick="focusPlanet(this)" id="mercury" class="planetContainer planetHoverEffect">
+                <img class="planet" src="/planetPictures/mercury.png">
+            </div>
+    
+            <div onclick="focusPlanet(this)" id="sun" class="planetContainer planetHoverEffect">
+                <img class="planet" src="/planetPictures/sun.png">
+            </div>
+    
+            <div onclick="focusPlanet(this)" id="earth" class="planetContainer planetHoverEffect">
+                <img class="planet" src="/planetPictures/earth.png">
+            </div>
+    
+            <div onclick="focusPlanet(this)" id="venus" class="planetContainer planetHoverEffect">
+                <img class="planet" src="/planetPictures/venus.png">
+            </div>
+    
+            <div onclick="focusPlanet(this)" id="jupiter" class="planetContainer planetHoverEffect">
+                <img class="planet" src="/planetPictures/jupiter.png">
+            </div>
+
+            <a id="backButton" onclick="addPlanetsBack()">←</a>
+            <div id="articleContainer" class="articleContainer">
+                <h1 id="planetName">Mars</h1>
+                <article id="planetDescription" class="article">
+                    <p id="planetText">Venus is the second planet from the Sun, orbiting it the closest to Earth. It is sometimes called Earth's 'sister' or 'twin' planet as it is almost as large and has a similar composition. Venus, like Mercury, appears in Earth's sky never far from the Sun, either as morning star or evening star with a synodic period of 1.6 years. It is, after the Moon, the brightest natural object in Earth's sky, capable of casting visible shadows on Earth at dark conditions and being visible to the naked eye in broad sunlight.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
